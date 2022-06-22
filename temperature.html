@@ -4,19 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Simple Conv - Energy Converter</title>
+        <title>Simple Conv - Area Converter</title>
 
-        <meta name="description" content="SimpleConv aims to provide accurate conversions between major units of measurement. The energy converter provides most major conversions for energy.">
-        <link rel="canonical" href="https://www.simpleconv.com/energy.html">
+        <meta name="description" content="SimpleConv aims to provide accurate conversions between major units of measurement. The area converter provides most major conversions for area.">
+        <link rel="canonical" href="https://www.simpleconv.com/area.html">
         <meta name="robots" content="index">
 
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-        
+
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/Conversions.js"></script>
     </head>
 
-    <body>
+    <body>    
         <header>
             <nav>
                 <a href="index.html"><img src="images/3.png" alt="Unit Conversion Logo"></a>
@@ -37,7 +37,7 @@
         </header>
         <div class="wrapper">
             <div>
-                <h2>Energy Converter</h2>
+                <h2>Temperature Converter</h2>
                 <p>Please choose the two units you would like to convert between to continue</p>
 
 
@@ -45,12 +45,10 @@
                     <label for="start-val"></label>
                     <label for="start"></label><input type="number" id="start" name="start" placeholder="Value Here">
                     <div class="option">
-                        <select name="Starting Energy" id="start-val">
-                            <option value="j">Joule</option>
-                            <option value="cal">Calorie</option>
-                            <option value="btu">British Thermal Unit</option>
-                            <option value="kw">Kilowatt Hour</option>
-                            <option value="ev">Electron Volt</option>
+                        <select name="Starting Temperature" id="start-val">
+                            <option value="c">Celsius</option>
+                            <option value="f">Farenheit</option>
+                            <option value="k">Kelvin</option>
                         </select>
                     </div>
                 </div>
@@ -59,18 +57,16 @@
                     <label for="end-val">Convert to:</label>
 
                     <div class="option2">
-                        <select name="Energy to Convert To" id="end-val">
-                            <option value="j">Joule</option>
-                            <option value="cal">Calorie</option>
-                            <option value="btu">British Thermal Unit</option>
-                            <option value="kw">Kilowatt Hour</option>
-                            <option value="ev">Electron Volt</option>
+                        <select name="Temperature to Convert To" id="end-val">
+                            <option value="c">Celsius</option>
+                            <option value="f">Farenheit</option>
+                            <option value="k">Kelvin</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="group">
-                    <button class="button-59" onclick="Get_Energy()">Convert</button>
+                    <button class="button-59" onclick="Get_Temperature()">Convert</button>
                     <p id="answer"></p>
                 </div>
             </div>

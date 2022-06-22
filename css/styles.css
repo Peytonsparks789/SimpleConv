@@ -120,7 +120,7 @@ nav li:first-child {
     padding-top: 2em;
 }
 nav li:last-child {
-    padding-bottom: 0;
+    padding-bottom: 15px;
 }
 
 
@@ -133,7 +133,7 @@ nav li:last-child {
         padding-left: 150px;
     }
     nav ul {
-        font-size: 1.5em;
+        font-size: 1.25em;
     }
     .combo-box select, .combo-box input {
         width: 200px;
