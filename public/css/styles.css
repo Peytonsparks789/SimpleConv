@@ -8,6 +8,7 @@
 html, body {
     height: 100%;
     background-color: var(--background);
+    overflow-y: hidden;
 }
 
 .group {
@@ -162,9 +163,12 @@ nav li:last-child {
     }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 510px) {
     .wrapper {
         display: block;
+    }
+    body {
+        overflow-y: auto;
     }
 }
 
