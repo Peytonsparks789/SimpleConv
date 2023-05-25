@@ -116,10 +116,6 @@ nav ul {
     *display: inline;
 }
 
-/*nav ul .not-indent {
-    float: left;
-}*/
-
 nav a:link, nav a:visited, nav a:active {
     color: white;
     text-decoration: none;
