@@ -213,7 +213,7 @@ const templates = {
             <div class="combo-box">
                 <div title="Enter a numeric value to convert">
                     <label for="start-val"></label>
-                    <label for="start"></label><input type="number" id="start" name="start" placeholder="Value Here" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    <input type="number" id="start" name="start" placeholder="Value Here">
                 </div>
                 <div class="option"></div>
             </div>
@@ -298,8 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function handleAnchorClick(event) {
         event.preventDefault();
         let anchorClass = event.target.className;
-        let newId = anchorClass;
-        handleIdChange(newId);
+        handleIdChange(anchorClass);
     }
 
     function handleIdChange(newId) {
